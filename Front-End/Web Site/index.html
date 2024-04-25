@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microgreen Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Microgreen</h1>
+      <img src="microgreen_logo.png" alt="Microgreen Logo" class="logo">
+    </div>
+  </header>
+  
+  <main>
+    <div class="controls">
+      <button id="turnOn">Turn On</button>
+      <button id="turnOff">Turn Off</button>
+    </div>
+    <div id="sensorDataHeader">
+      <h2>Sensor Data</h2>
+    </div>
+    <div id="sensorDataContent">
+      <div class="sensor-info">
+        <h3>Temperature</h3>
+        <p id="temperature">--</p>
+      </div>
+      <div class="sensor-info">
+        <h3>Humidity</h3>
+        <p id="humidity">--</p>
+      </div>
+      <div class="sensor-info">
+        <h3>Water Level</h3>
+        <p id="waterLevel">--</p>
+      </div>
+    </div>
+    <div class="additional-controls">
+      <button id="autoMode">Pencahayaan Otomatis</button>
+      <button id="autoWatering">Siram Otomatis</button>
+    </div>
+    <div id="chartContainer"></div>
+    <button id="backButton" class="back-button" onclick="confirmBack()">Putuskan Koneksi Perangkat</button>
+  </main>
+  <footer>
+    <p>&copy; 2024 Microgreen IoT Control Panel</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
