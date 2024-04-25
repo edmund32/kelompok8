@@ -1,0 +1,94 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #baf3c9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+header {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+.pairing-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-right: 50px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pairing-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pairing-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pairing-form button:hover {
+  background-color: #97de9b;
+  transform: scale(1.05);
+}
+
+.pairing-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 40px; /* Lebar tombol diperlebar */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px; /* Ukuran font diperbesar */
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.pairing-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4CAF50;
+  color: white;
+}
